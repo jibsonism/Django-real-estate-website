@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import environ
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -136,9 +135,6 @@ MEDIA_ROOT = 'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-env = environ.Env()
-environ.Env.read_env()
 
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
