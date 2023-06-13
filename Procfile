@@ -1,0 +1,1 @@
+web: gunicorn kingsley_property.wsgi --log-file -
